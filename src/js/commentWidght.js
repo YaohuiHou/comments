@@ -11,7 +11,7 @@ function commentWidget(options) {
     for (var i in options) {
         this.defaults[i] = options[i]
     };
-    this.generate();
+    this.generate(); 
 };
 commentWidget.prototype = {
     generate: function() {
