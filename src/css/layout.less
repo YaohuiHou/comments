@@ -1,0 +1,32 @@
+/* reset */
+body, p, figure,ul,li{margin:0;padding:0; font-size: 16px; font-weight: 400}
+body,textarea,input{ font:16px/1.5 "Microsoft YaHei",Arial; }
+ul{list-style: none}
+var, em, i{ font-style:normal;}
+a img{ border:0 none;}
+a:link,a:visited{text-decoration: none}
+img{ vertical-align: middle;}
+textarea,input[type="submit"]{-webkit-appearance: none;-webkit-border-image: none; border-image: none; -webkit-border-radius: 0; border-radius: 0; border:0 none;}
+@font-face {
+  font-family: 'comments';
+  src: url('//at.alicdn.com/t/font_1476342619_101717.woff') format('woff');
+}
+
+/* layout */
+body{
+     > .container{
+        > form{position: relative;padding:10px;
+            textarea{padding:7px 10px;width:100%;border-radius: 2px;display: block; height:100px;resize: none; box-sizing: border-box; font-size: 14px; line-height: 20px;}
+            footer{margin-top:10px;height: 32px;line-height: 32px;overflow: hidden;}
+            input[type="submit"]{float:right;width: 70px; height: 32px; color:#fff;background: #02BB00;border:0 none;border-radius: 4px;transition: all .3s linear;
+                &:disabled{color:rgba(255,255,255,.5);background: rgba(2,187,0,.5)}
+            }
+        }
+        .emoji{font-size: 12px;
+            &:before{margin:4px 5px 0 0;content:"\8868"; font-family: "comments";font-size: 16px;vertical-align: top;}
+            &.selected{color:#02BB00;
+                &:before{content:"\60c5";}
+            }
+        }
+     }
+}
