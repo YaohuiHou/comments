@@ -1,8 +1,8 @@
 # 新版专题评论系统
-采用微信开源的前端自动化工具weflow进行开发
-必选参数帖子id:tid,皮肤:theme;
-实例：comment.php?tid=1222&theme=dark;
-theme现阶段只提供两个值 light,dark;
+- 采用微信开源的前端自动化工具weflow进行开发
+- 必选参数帖子id:tid,皮肤:theme;
+- 实例：comment.php?tid=1222&theme=dark;
+- theme现阶段只提供两个值 light,dark;
 
 ## 项目开发简介
 
